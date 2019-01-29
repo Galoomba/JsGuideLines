@@ -1,23 +1,19 @@
 /**
- * using Arrays
+ * Rest & sprade opreatiors 
  */
 
 const hobbies = ['Sports','Cooking']
 
-// //foreach loop 
-// for (let hobby of hobbies)
-//     console.log(hobby)
+// copy array by slice 
+const copiedHobbies =hobbies.slice()
 
-// //using map function 
-// console.log(hobbies.map(hobby=>"hoppy "+hobby))
-// //orginal array stayed the same 
+//  Sprade opreatior
+const secondCopy=[...hobbies]
 
+//  Rest opreatior
+const toArray=(...args)=>args
+const thirdCopy=toArray(1,2,3,4,5)
 
-/**
- * Array Objects Reference types 
- * --> Although it's a constant we can still add and delete element to it
- * as the Reference is the constant not the element 
- */
-hobbies.push('Fishing')
-
-console.log(hobbies)
+console.log(copiedHobbies)
+console.log(secondCopy)
+console.log(thirdCopy)
