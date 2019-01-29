@@ -1,16 +1,14 @@
 /**
- * using objects
+ * using Arrays
  */
 
-const Person={
-    name:'Daviid',
-    age :24,
-    //functions shapes..
-        levelUp(name ,age){ return this.name+" "+ this.age++;},
-        levelUpUp:function(name ,age){return this.name+" "+ this.age++;},
-        //In Arrow function This keyword refere to the globle scope not the object scope
-        levelUpUpUp:(name ,age)=>{this.name+" "+ this.age++;}
-}
-console.log(Person.levelUp(Person.name,Person.age));
-console.log(Person.levelUpUp(Person.name,Person.age));
-console.log(Person.levelUpUpUp(Person.name,Person.age));
+const hobbies = ['Sports','Cooking']
+
+//foreach loop 
+for (let hobby of hobbies)
+    console.log(hobby)
+
+//using map function 
+console.log(hobbies.map(hobby=>"hoppy "+hobby))
+//orginal array stayed the same 
+console.log(hobbies)
