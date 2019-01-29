@@ -7,8 +7,7 @@
 const name='Daviid';
 let age =24;
 
-function levelUp(name ,age){
-    return name+" "+ ++age;
-}
+const levelUp=(name ,age)=> name+" "+ ++age;
+
 
 console.log(levelUp(name,age));
