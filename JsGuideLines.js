@@ -1,12 +1,14 @@
 /**
- * declaring 2 variables , passing them to a function and calling it 
+ * Using let & const insisted of var 
+ * const -> the value gonna stay constant
+ * let -> same as var but have different scope level
  */
 
-var name='Daviid';
-var age =24;
+const name='Daviid';
+let age =24;
 
-function print(name ,age){
-    return name+" "+age;
+function levelUp(name ,age){
+    return name+" "+ ++age;
 }
 
-console.log();
+console.log(levelUp(name,age));
