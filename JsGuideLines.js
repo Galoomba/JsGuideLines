@@ -1,19 +1,30 @@
 /**
- * Rest & sprade opreatiors 
+ * Destructuring Arrays And Objects
  */
 
 const hobbies = ['Sports','Cooking']
+const person ={
+    name:"Galoomba",
+    age:16,
+}
 
-// copy array by slice 
-const copiedHobbies =hobbies.slice()
+// Destructuring object 
+// extract the name form the object 
 
-//  Sprade opreatior
-const secondCopy=[...hobbies]
+const getName = ({name})=>name;
+const mName= getName(person)
 
-//  Rest opreatior
-const toArray=(...args)=>args
-const thirdCopy=toArray(1,2,3,4,5)
+const {name,age} =person
 
-console.log(copiedHobbies)
-console.log(secondCopy)
-console.log(thirdCopy)
+console.log(mName)
+console.log(name,age)
+
+
+//Destructuring Arrays 
+//extract some element from array 
+const [myHobby] = hobbies
+
+const [hobby1, hobby2]=hobbies
+
+console.log(myHobby)
+console.log(hobby1,hobby2)
